@@ -1,94 +1,93 @@
-﻿<!--
-    Autor: Nowel Báez Abreu
-    Fecha: 14/01/2026
-    Descripción: Página principal de mi portafolio personal
--->
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Configuración básica -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Título del navegador -->
-    <title>Nowel Báez | Portafolio</title>
-
-    <!-- Estilos -->
+    <title>Nowel Báez | Desarrollador Java & Web</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-  <!-- Presentacion general  -->
 
-  <header>
-    <div class="hero">
-        <div class="hero-content">
-
-            <!-- TEXTO -->
-            <div class="hero-text">
-                <h1>Hola, soy <span>Nowel Báez</span></h1>
-                <p>Desarrollador Junior enfocado en Java y desarrollo web</p>
-
-                <div class="buttons">
-                    <a href="#proyectos" class="btn-primary">Ver proyectos</a>
-                    <a href="#contacto" class="btn-secondary">Contáctame</a>
+    <header>
+        <div class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hola, soy <span>Nowel Báez</span></h1>
+                    <p>Desarrollador Junior apasionado por Java y soluciones web modernas.</p>
+                    <div class="buttons">
+                        <a href="#proyectos" class="btn-primary">Explorar Proyectos</a>
+                        <a href="#contacto" class="btn-secondary">Contáctame</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="img/nowel.jpg" alt="Foto de perfil de Nowel Báez">
                 </div>
             </div>
-
-            <!-- FOTO -->
-            <div class="hero-image">
-                <img src="img/nowel.jpg" alt="Foto de Nowel Báez">
-            </div>
-
         </div>
-    </div>
-</header>
+    </header>
 
+    <section id="habilidades">
+        <h2>Habilidades Técnicas</h2>
+        <div class="skills-container">
+            <span class="skill-tag">Java SE</span>
+            <span class="skill-tag">HTML5 / CSS3</span>
+            <span class="skill-tag">SQL (MySQL)</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">POO</span>
+        </div>
+    </section>
 
-    <!-- SOBRE MÍ -->
     <section id="sobre-mi">
         <h2>Sobre mí</h2>
         <div class="card">
             <p>
-                Soy desarrollador junior apasionado por la tecnología y el aprendizaje constante.
-                Me enfoco principalmente en Java y desarrollo web, creando proyectos prácticos
-                que me permiten mejorar mis habilidades y crecer profesionalmente.
+                Soy un desarrollador junior con un fuerte enfoque en el ecosistema de <strong>Java</strong>. 
+                Me dedico a construir aplicaciones funcionales y eficientes. 
+                Actualmente estoy trabajando en nuevos proyectos para ampliar mi portafolio.
             </p>
         </div>
     </section>
 
-    <!-- PROYECTOS -->
     <section id="proyectos">
-        <h2>Proyectos</h2>
-
+        <h2>Proyectos Destacados</h2>
         <div class="card">
-            <h3>📌 Sistema de Deudores</h3>
-            <p>Aplicación desarrollada en Java para gestionar clientes y deudas de forma sencilla.</p>
-        </div>
-
-        <div class="card">
-            <h3>📌 Portafolio Personal</h3>
-            <p>Página web creada con HTML y CSS para mostrar mis proyectos y perfil profesional.</p>
-        </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <div class="card">
-            <p>📧 Email: <strong>NowelBaez2017@gmail.com</strong></p>
-            <p>💻 GitHub: 
-                <a href="https://github.com/NowelBaez2017" target="_blank">
-                    github.com/NowelBaez2017
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h3>📌 Portafolio Personal</h3>
+                <a href="https://github.com/NowelBaez2017/portafolio-nowel" target="_blank" class="project-icon" title="Ver código en GitHub">
+                    <i class="fab fa-github"></i>
                 </a>
-            </p>
+            </div>
+            <p>Landing page responsiva construida con HTML5 y CSS3 personalizado.</p>
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <section id="contacto">
+        <h2>Hablemos</h2>
+        <div class="card" style="text-align: center;">
+            <p style="margin-bottom: 20px;">¿Tienes una propuesta o quieres saludar? ¡Usa cualquiera de estos medios!</p>
+            <div class="contact-icons">
+               <a href="mailto:NowelBaez2017@gmail.com" class="social-icon" title="Enviar Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+                </a>
+                <a href="https://github.com/NowelBaez2017" target="_blank" class="social-icon" title="Visitar GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/nowel-baez-0715b7283/" target="_blank" class="social-icon" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+              <a  href="https://wa.me/18296310717" target="_blank" class="social-icon" title="WhatsApp">
+                 <i class="fab fa-whatsapp"></i>
+              </a>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>© 2026 Nowel Báez — Todos los derechos reservados</p>
+        <p>© 2026 Nowel Báez — Desarrollado con ❤️ y código.</p>
     </footer>
 
 </body>
