@@ -117,27 +117,101 @@ section h2 {
     border-color: rgba(185, 108, 255, 0.4);
 }
 
-.project-header {
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.project-card {
+    min-height: 310px;
+    perspective: 1200px;
+}
+
+.project-card-inner {
+    height: 100%;
+    min-height: 310px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease;
+}
+
+.project-card:hover .project-card-inner,
+.project-card:focus-within .project-card-inner {
+    transform: rotateY(180deg);
+}
+
+.project-face {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(124,58,237,0.25);
+    border-radius: 16px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+    backface-visibility: hidden;
     display: flex;
+    flex-direction: column;
+    inset: 0;
     justify-content: space-between;
-    align-items: center;
-    gap: 18px;
+    min-height: 310px;
+    padding: 24px;
+    position: absolute;
+}
+
+.project-front {
+    transform: rotateY(0deg);
+}
+
+.project-back {
+    background: linear-gradient(145deg, rgba(124, 58, 237, 0.22), rgba(20, 8, 38, 0.96));
+    transform: rotateY(180deg);
+}
+
+.project-kicker {
+    color: #c4b5fd;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.project-face h3 {
+    font-size: 1.35rem;
+    margin: 12px 0;
+}
+
+.project-face p {
+    color: #eee7ff;
+    font-size: 0.98rem;
 }
 
 .project-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: 18px;
+    margin-top: 20px;
 }
 
 .project-tags span {
     border: 1px solid rgba(185, 108, 255, 0.35);
     border-radius: 999px;
     color: #c4b5fd;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     font-weight: 600;
     padding: 5px 12px;
+}
+
+.project-link {
+    align-items: center;
+    color: #ffffff;
+    display: inline-flex;
+    font-weight: 700;
+    gap: 10px;
+    margin-top: 18px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.project-link:hover {
+    color: #c4b5fd;
 }
 
 /* 4.1 HABILIDADES */
@@ -214,6 +288,16 @@ footer {
 
     section {
         padding: 50px 20px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card,
+    .project-card-inner,
+    .project-face {
+        min-height: 330px;
     }
     
     .social-icon {
