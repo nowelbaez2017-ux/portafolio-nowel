@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Nowel</title>
-    <link rel="stylesheet" href="style.css?v=project-images-1">
+    <title>Nowel Báez | Portafolio</title>
+    <meta name="description" content="Portafolio de Nowel Báez, desarrollador junior enfocado en Java, desarrollo web y soluciones funcionales.">
+    <meta property="og:title" content="Nowel Báez | Desarrollador Junior">
+    <meta property="og:description" content="Portafolio profesional de Nowel Báez: Java, desarrollo web, proyectos académicos y soluciones funcionales.">
+    <meta property="og:image" content="img/nowel.jpg">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css?v=cube-restored-1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
@@ -14,23 +19,59 @@
         <div class="hero">
             <div class="hero-content">
                 <div class="hero-text">
-                    <span class="portfolio-label">Portafolio Nowel</span>
+                    <span class="portfolio-label">Portafolio profesional</span>
                     <h1>Hola, soy <span>Nowel Báez</span></h1>
-                    <p>Desarrollador Junior apasionado por Java y soluciones web modernas.</p>
+                    <p>Desarrollador junior enfocado en Java, desarrollo web y soluciones prácticas. Construyo proyectos claros, funcionales y pensados para seguir creciendo en el mundo laboral.</p>
                     <div class="buttons">
-                        <a href="#proyectos" class="btn-primary">Explorar Proyectos</a>
-                        <a href="#contacto" class="btn-secondary">Contáctame</a>
+                        <a href="#proyectos" class="btn-primary"><i class="fas fa-layer-group"></i> Ver proyectos</a>
+                        <a href="#contacto" class="btn-secondary"><i class="fas fa-paper-plane"></i> Contacto</a>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <img src="img/nowel.jpg" alt="Foto de perfil de Nowel Báez">
+                <div class="hero-visual" aria-label="Presentación visual de Nowel">
+                    <div class="profile-card tilt-card">
+                        <div class="profile-orbit"></div>
+                        <img src="img/nowel.jpg" alt="Foto de perfil de Nowel Báez">
+                    </div>
+                    <div class="tech-cube" aria-hidden="true">
+                        <div class="cube-face front">Java</div>
+                        <div class="cube-face back">CSS</div>
+                        <div class="cube-face right">JS</div>
+                        <div class="cube-face left">HTML</div>
+                        <div class="cube-face top">DB</div>
+                        <div class="cube-face bottom">Git</div>
+                    </div>
+                    <div class="floating-card floating-card-one">
+                        <i class="fas fa-code"></i>
+                        <span>Web + Java</span>
+                    </div>
+                    <div class="floating-card floating-card-two">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Listo para crecer</span>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="habilidades">
+    <section id="objetivo" class="reveal-section">
+        <h2>Objetivo Profesional</h2>
+        <div class="career-card">
+            <div>
+                <span class="section-badge">Buscando oportunidad junior</span>
+                <h3>Quiero aportar en proyectos reales mientras sigo creciendo como desarrollador.</h3>
+                <p>Estoy enfocado en fortalecer mis bases de programación, crear soluciones web funcionales y participar en equipos donde pueda aprender buenas prácticas, aportar disciplina y mejorar cada entrega.</p>
+            </div>
+            <div class="career-points">
+                <span><i class="fas fa-location-dot"></i> República Dominicana / remoto</span>
+                <span><i class="fas fa-laptop-code"></i> Desarrollo web y Java</span>
+                <span><i class="fas fa-handshake"></i> Prácticas, colaboración o rol junior</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="reveal-section">
         <h2>Habilidades Técnicas</h2>
+        <p class="section-intro">Tecnologías que uso para crear interfaces, manejar datos y desarrollar lógica de aplicaciones.</p>
         <div class="skills-container">
             <span class="skill-tag">HTML5</span>
             <span class="skill-tag">CSS3</span>
@@ -44,7 +85,7 @@
         </div>
     </section>
 
-    <section id="sobre-mi">
+    <section id="sobre-mi" class="reveal-section">
         <h2>Sobre mí</h2>
         <div class="card">
             <p>
@@ -55,8 +96,52 @@
         </div>
     </section>
 
-    <section id="certificados">
+    <section id="enfoque" class="reveal-section">
+        <h2>Mi enfoque</h2>
+        <div class="focus-grid">
+            <article class="focus-item">
+                <i class="fas fa-code"></i>
+                <h3>Construcción práctica</h3>
+                <p>Aprendo desarrollando proyectos reales, cuidando estructura, claridad visual y funcionamiento.</p>
+            </article>
+            <article class="focus-item">
+                <i class="fas fa-database"></i>
+                <h3>Lógica y datos</h3>
+                <p>Me interesa conectar interfaces con procesos, archivos, bases de datos y reglas de negocio.</p>
+            </article>
+            <article class="focus-item">
+                <i class="fas fa-people-group"></i>
+                <h3>Trabajo en equipo</h3>
+                <p>He colaborado en proyectos académicos dividiendo módulos, integrando avances y documentando resultados.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="servicios" class="reveal-section">
+        <h2>Lo que puedo construir</h2>
+        <p class="section-intro">Áreas donde puedo aportar valor como desarrollador junior y seguir subiendo de nivel con práctica real.</p>
+        <div class="service-grid">
+            <article class="service-card">
+                <i class="fas fa-window-maximize"></i>
+                <h3>Páginas web responsivas</h3>
+                <p>Interfaces limpias, adaptadas a celular y desktop, con estructura clara para presentar proyectos o negocios.</p>
+            </article>
+            <article class="service-card">
+                <i class="fas fa-gears"></i>
+                <h3>Módulos administrativos</h3>
+                <p>Vistas para registrar, consultar y organizar información, como habitaciones, tareas, usuarios o reportes.</p>
+            </article>
+            <article class="service-card">
+                <i class="fas fa-code-branch"></i>
+                <h3>Mejoras e integración</h3>
+                <p>Corrección de detalles visuales, organización de código, integración de módulos y colaboración en equipo.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="certificados" class="reveal-section">
         <h2>Certificados</h2>
+        <p class="section-intro">Formación técnica y complementaria que fortalece mi base profesional.</p>
         <div class="certificate-list">
             <div class="certificate-card">
                 <div class="certificate-icon">
@@ -71,7 +156,7 @@
                         <span>10 de julio de 2019</span>
                         <span>Santiago</span>
                     </div>
-                    <a href="certificados/cortesia-atencion-cliente-infotep.pdf" target="_blank" class="project-link">
+                    <a href="certificados/cortesia-atencion-cliente-infotep.pdf" target="_blank" rel="noopener noreferrer" class="project-link">
                         Ver diploma <i class="fas fa-file-pdf"></i>
                     </a>
                 </div>
@@ -90,7 +175,7 @@
                         <span>Técnico Profesional</span>
                         <span>26 de julio de 2018</span>
                     </div>
-                    <a href="certificados/bachillerato-tecnico-mecatronica.pdf" target="_blank" class="project-link">
+                    <a href="certificados/bachillerato-tecnico-mecatronica.pdf" target="_blank" rel="noopener noreferrer" class="project-link">
                         Ver certificado <i class="fas fa-file-pdf"></i>
                     </a>
                 </div>
@@ -109,7 +194,7 @@
                         <span>Modalidad Técnico Profesional</span>
                         <span>2017</span>
                     </div>
-                    <a href="certificados/diploma-tecnico-mecatronica.pdf" target="_blank" class="project-link">
+                    <a href="certificados/diploma-tecnico-mecatronica.pdf" target="_blank" rel="noopener noreferrer" class="project-link">
                         Ver diploma <i class="fas fa-file-pdf"></i>
                     </a>
                 </div>
@@ -117,8 +202,9 @@
         </div>
     </section>
 
-    <section id="proyectos">
+    <section id="proyectos" class="reveal-section">
         <h2>Proyectos Destacados</h2>
+        <p class="section-intro">Una selección de proyectos donde practico desarrollo web, Java, colaboración y resolución de problemas.</p>
         <div class="projects-grid">
             <article class="project-card">
                 <div class="project-card-inner">
@@ -130,14 +216,18 @@
                         <span class="project-kicker">Web personal</span>
                     </div>
                     <div class="project-face project-back">
-                        <h3>Descripción</h3>
+                        <h3>Portafolio Personal</h3>
                         <p>Lo hice para mostrar quién soy, qué estoy aprendiendo y tener un espacio donde reunir mis proyectos mientras sigo creciendo como desarrollador.</p>
+                        <div class="project-meta">
+                            <span><strong>Rol:</strong> Diseño y desarrollo completo</span>
+                            <span><strong>Aprendizaje:</strong> Identidad visual, responsive y presentación profesional</span>
+                        </div>
                         <div class="project-tags">
                             <span>HTML</span>
                             <span>CSS</span>
                             <span>GitHub Pages</span>
                         </div>
-                        <a href="https://github.com/nowelbaez2017-ux/nowelbaez2017-ux.github.io" target="_blank" class="project-link">
+                        <a href="https://github.com/nowelbaez2017-ux/nowelbaez2017-ux.github.io" target="_blank" rel="noopener noreferrer" class="project-link">
                             Ver proyecto <i class="fab fa-github"></i>
                         </a>
                     </div>
@@ -154,8 +244,12 @@
                         <span class="project-kicker">Proyecto UASD</span>
                     </div>
                     <div class="project-face project-back">
-                        <h3>Descripción</h3>
+                        <h3>Sistema de Gestión Hotel UASD</h3>
                         <p>Proyecto final desarrollado con la participación del curso completo, organizado en grupos de tres personas. Cada grupo trabajó un módulo específico y luego se integraron las partes para construir un sistema hotelero funcional.</p>
+                        <div class="project-meta">
+                            <span><strong>Problema:</strong> Centralizar procesos de gestión hotelera</span>
+                            <span><strong>Rol:</strong> Colaboración por módulo e integración con el equipo</span>
+                        </div>
                         <div class="project-tags">
                             <span>HTML</span>
                             <span>CSS</span>
@@ -164,7 +258,7 @@
                             <span>XML</span>
                             <span>Proyecto grupal</span>
                         </div>
-                        <a href="https://github.com/nowelbaez2017-ux/sistema-hotelero-uasd" target="_blank" class="project-link">
+                        <a href="https://github.com/nowelbaez2017-ux/sistema-hotelero-uasd" target="_blank" rel="noopener noreferrer" class="project-link">
                             Ver proyecto <i class="fab fa-github"></i>
                         </a>
                     </div>
@@ -181,8 +275,12 @@
                         <span class="project-kicker">Módulo del hotel</span>
                     </div>
                     <div class="project-face project-back">
-                        <h3>Descripción</h3>
+                        <h3>Módulo de Limpieza</h3>
                         <p>Este módulo de limpieza permite gestionar las habitaciones del hotel, asignar tareas al personal y actualizar el estado de cada habitación para llevar un mejor control dentro del sistema.</p>
+                        <div class="project-meta">
+                            <span><strong>Problema:</strong> Controlar estados y tareas de habitaciones</span>
+                            <span><strong>Aporte:</strong> Flujo de limpieza, organización y liderazgo del módulo</span>
+                        </div>
                         <div class="project-tags">
                             <span>HTML</span>
                             <span>JavaScript</span>
@@ -190,7 +288,7 @@
                             <span>Colaboración</span>
                             <span>Liderazgo</span>
                         </div>
-                        <a href="https://github.com/nabxo/sistema-hotelero-limpieza" target="_blank" class="project-link">
+                        <a href="https://github.com/nabxo/sistema-hotelero-limpieza" target="_blank" rel="noopener noreferrer" class="project-link">
                             Ver proyecto <i class="fab fa-github"></i>
                         </a>
                     </div>
@@ -207,14 +305,18 @@
                         <span class="project-kicker">Proyecto en equipo</span>
                     </div>
                     <div class="project-face project-back">
-                        <h3>Descripción</h3>
+                        <h3>Softball Scorer</h3>
                         <p>Proyecto desarrollado en colaboración con Wilfredi para optimizar el registro de anotaciones en partidos de softball, reemplazando el uso de hojas físicas por una solución digital más práctica.</p>
+                        <div class="project-meta">
+                            <span><strong>Problema:</strong> Digitalizar anotaciones deportivas</span>
+                            <span><strong>Aprendizaje:</strong> Java POO, trabajo en equipo y lógica de registro</span>
+                        </div>
                         <div class="project-tags">
                             <span>Java</span>
                             <span>POO</span>
                             <span>Trabajo en equipo</span>
                         </div>
-                        <a href="https://github.com/wilfredysilverio/Softball-Scorer" target="_blank" class="project-link">
+                        <a href="https://github.com/wilfredysilverio/Softball-Scorer" target="_blank" rel="noopener noreferrer" class="project-link">
                             Ver proyecto <i class="fab fa-github"></i>
                         </a>
                     </div>
@@ -223,21 +325,21 @@
         </div>
     </section>
 
-    <section id="contacto">
+    <section id="contacto" class="reveal-section">
         <h2>Hablemos</h2>
-        <div class="card" style="text-align: center;">
-            <p style="margin-bottom: 20px;">¿Tienes una propuesta o quieres saludar? ¡Usa cualquiera de estos medios!</p>
+        <div class="card contact-card">
+            <p>¿Tienes una propuesta o quieres saludar? Usa cualquiera de estos medios.</p>
             <div class="contact-icons">
-               <a href="mailto:NowelBaez2017@gmail.com" class="social-icon" title="Enviar Email">
+               <a href="mailto:NowelBaez2017@gmail.com" class="social-icon" title="Enviar Email" aria-label="Enviar email a Nowel">
                 <i class="fas fa-envelope"></i>
               </a>
-                <a href="https://github.com/nowelbaez2017-ux" target="_blank" class="social-icon" title="Visitar GitHub">
+                <a href="https://github.com/nowelbaez2017-ux" target="_blank" rel="noopener noreferrer" class="social-icon" title="Visitar GitHub" aria-label="Visitar GitHub de Nowel">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/nowel-baez-0715b7283/" target="_blank" class="social-icon" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/nowel-baez-0715b7283/" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn" aria-label="Visitar LinkedIn de Nowel">
                     <i class="fab fa-linkedin"></i>
                 </a>
-              <a  href="https://wa.me/18296310717" target="_blank" class="social-icon" title="WhatsApp">
+              <a href="https://wa.me/18296310717" target="_blank" rel="noopener noreferrer" class="social-icon" title="WhatsApp" aria-label="Contactar a Nowel por WhatsApp">
                  <i class="fab fa-whatsapp"></i>
               </a>
             </div>
@@ -245,8 +347,10 @@
     </section>
 
     <footer>
-        <p>© 2026 Nowel Báez — Desarrollado con ❤️ y código.</p>
+        <p>© 2026 Nowel Báez. Desarrollado con HTML, CSS y muchas ganas de seguir creciendo.</p>
     </footer>
+
+    <script src="script.js?v=cube-restored-1" defer></script>
 
 </body>
 </html>
